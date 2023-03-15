@@ -1,4 +1,5 @@
 import "./style.css";
+import InitializeElements from "./scripts/initializeElements";
 import Icon from "./dkc.webp";
 
 const element = document.createElement("div");
