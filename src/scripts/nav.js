@@ -18,4 +18,10 @@ export default function navController() {
       contentDiv.appendChild(generatedDiv);
     }
   }
+
+  navTabs.forEach((tab) => {
+    const classes = Array.from(tab.classList);
+    const activeClass = classes.find((className) => className !== "tab");
+    tab.addEventListener("click", () => switchTab(activeClass));
+  });
 }
