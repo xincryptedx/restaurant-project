@@ -1,5 +1,6 @@
 import HomeTab from "./homeTab";
 import MenuTab from "./menuTab";
+import ContactTab from "./contactTab";
 
 export default function navController() {
   const navTabs = document.querySelectorAll(".nav .tab");
@@ -20,6 +21,11 @@ export default function navController() {
     }
     if (tab === "menu") {
       generatedDiv = MenuTab();
+      removeContent();
+      contentDiv.appendChild(generatedDiv);
+    }
+    if (tab === "contact") {
+      generatedDiv = ContactTab();
       removeContent();
       contentDiv.appendChild(generatedDiv);
     }
