@@ -1,4 +1,5 @@
 import HomeTab from "./homeTab";
+import MenuTab from "./menuTab";
 
 export default function navController() {
   const navTabs = document.querySelectorAll(".nav .tab");
@@ -14,6 +15,11 @@ export default function navController() {
   function switchTab(tab) {
     if (tab === "home") {
       generatedDiv = HomeTab();
+      removeContent();
+      contentDiv.appendChild(generatedDiv);
+    }
+    if (tab === "menu") {
+      generatedDiv = MenuTab();
       removeContent();
       contentDiv.appendChild(generatedDiv);
     }
