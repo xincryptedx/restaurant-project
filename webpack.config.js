@@ -2,8 +2,11 @@ const path = require("path"); //node.js utility
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/index.js", //If more than one use optimization bc devServer
   devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+  },
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
