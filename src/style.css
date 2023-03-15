@@ -131,3 +131,14 @@ table {
 }
 
 /* #endregion */
+
+/* Global Variables */
+:root {
+  --header-bg-color: hsl(0, 64%, 36%);
+
+  --nav-bg-color: hsl(56, 56%, 45%);
+
+  --content-bg-color: hsl(187, 51%, 75%);
+
+  --footer-bg-color: hsl(106, 60%, 39%);
+}
