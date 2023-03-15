@@ -16,16 +16,11 @@ function createElement(elementType, classes, parent) {
 
 export default function createInitialElements() {
   // Create Container Elements
-  const containerDiv = document.createElement("div");
-  containerDiv.classList.add("container");
+  const containerDiv = createElement("div", ["container"], document.body);
 
   // Create Header Elements w/ Classes
-  const headerDiv = document.createElement("div");
-  headerDiv.classList.add("header");
-  const headerTitle = document.createElement("p");
-  headerTitle.classList.add("title");
-  // Append Header Children
-  headerDiv.appendChild(headerTitle);
+  const headerDiv = createElement("div", ["header"], containerDiv);
+  const headerTitle = createElement("p", ["title"], headerDiv);
 
   // Create Nav Elements w/ Classes
   const navDiv = createElement("div", ["nav"], containerDiv);
@@ -41,10 +36,4 @@ export default function createInitialElements() {
 
   // Create Footer Elements
   createElement("div", ["footer"], containerDiv);
-
-  // Append Container Children
-  containerDiv.appendChild(headerDiv);
-
-  // Append to Body
-  document.body.appendChild(containerDiv);
 }
