@@ -1,6 +1,6 @@
 import { createElement } from "./initializeElements";
 
-export default function createHomeTab() {
+export default function createHomeDiv() {
   const element = createElement("div", ["home"]);
 
   // Create Children Elements
