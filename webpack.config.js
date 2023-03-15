@@ -1,4 +1,5 @@
 const path = require("path"); //node.js utility
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -7,6 +8,11 @@ module.exports = {
   devServer: {
     static: "./dist",
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "Restaurant Page",
+    }),
+  ],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
