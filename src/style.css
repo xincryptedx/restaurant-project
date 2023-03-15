@@ -161,6 +161,8 @@ table {
 /* #region */
 .header {
   grid-area: headerDiv;
+
+  background-color: var(--header-bg-color);
 }
 
 /* #endregion */
@@ -169,6 +171,8 @@ table {
 /* #region */
 .nav {
   grid-area: navDiv;
+
+  background-color: var(--nav-bg-color);
 }
 
 /* #endregion */
@@ -177,6 +181,8 @@ table {
 /* #region */
 .content {
   grid-area: contentDiv;
+
+  background-color: var(--content-bg-color);
 }
 
 /* #endregion */
@@ -185,6 +191,8 @@ table {
 /* #region */
 .footer {
   grid-area: footerDiv;
+
+  background-color: var(--footer-bg-color);
 }
 
 /* #endregion */
