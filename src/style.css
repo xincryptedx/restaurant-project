@@ -169,10 +169,27 @@ table {
 
 /* Nav Div */
 /* #region */
-.nav {
+.nav .tab-tray {
   grid-area: navDiv;
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
 
+  height: 100%;
   background-color: var(--nav-bg-color);
+}
+
+.nav .tab {
+  background-color: white;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  height: 80%;
+  width: 80%;
+  align-self: end;
+  justify-self: center;
+  border-radius: 5px 5px 0px 0px;
 }
 
 /* #endregion */
