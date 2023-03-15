@@ -142,3 +142,49 @@ table {
 
   --footer-bg-color: hsl(106, 60%, 39%);
 }
+
+/* Containter Div */
+/* #region */
+.container {
+  display: grid;
+  grid-template: 8vh 10vh 77vh 5vh/ 1fr;
+  grid-template-areas:
+    "headerDiv"
+    "navDiv"
+    "contentDiv"
+    "footerDiv";
+}
+
+/* #endregion */
+
+/* Header Div */
+/* #region */
+.header {
+  grid-area: headerDiv;
+}
+
+/* #endregion */
+
+/* Nav Div */
+/* #region */
+.nav {
+  grid-area: navDiv;
+}
+
+/* #endregion */
+
+/* Content Div */
+/* #region */
+.content {
+  grid-area: contentDiv;
+}
+
+/* #endregion */
+
+/* Footer Div */
+/* #region */
+.footer {
+  grid-area: footerDiv;
+}
+
+/* #endregion */
