@@ -44,5 +44,8 @@ export default function createInitialElements() {
   // Create Content Elements
 
   // Create Footer Elements
-  createElement("div", ["footer"], containerDiv);
+  const footerDiv = createElement("div", ["footer"], containerDiv);
+  const authorP = createElement("p", ["author"], footerDiv);
+  authorP.innerHTML =
+    "Created by <a href='https://github.com/xincryptedx'>xIncryptedx</a>";
 }
