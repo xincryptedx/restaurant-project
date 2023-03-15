@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-project",
+  "version": "1.0.0",
+  "description": "Simple restaurant website project. Made to practice webpack usage and generating DOM with javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xincryptedx/restaurant-project.git"
+  },
+  "author": "Joshua Barnhart joshua.r.barnhart@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xincryptedx/restaurant-project/issues"
+  },
+  "homepage": "https://github.com/xincryptedx/restaurant-project#readme",
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
