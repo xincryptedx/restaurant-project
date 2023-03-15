@@ -1,4 +1,4 @@
-function createElement(elementType, classes, parent, textContent) {
+export function createElement(elementType, classes, parent, textContent) {
   const element = document.createElement(elementType);
 
   if (classes) {
