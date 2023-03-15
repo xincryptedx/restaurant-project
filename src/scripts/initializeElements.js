@@ -24,22 +24,17 @@ export default function createInitialElements() {
 
   // Create Header Elements w/ Classes
   const headerDiv = createElement("div", ["header"], containerDiv);
-  const headerTitle = createElement(
-    "p",
-    ["title"],
-    headerDiv,
-    "The Legerdemain Lounge"
-  );
+  createElement("p", ["title"], headerDiv, "The Legerdemain Lounge");
 
   // Create Nav Elements w/ Classes
   const navDiv = createElement("div", ["nav"], containerDiv);
   const navTabTray = createElement("div", ["tab-tray"], navDiv);
   const homeTab = createElement("div", ["tab", "home"], navTabTray);
-  const homeTabText = createElement("p", [], homeTab, "Home");
+  createElement("p", [], homeTab, "Home");
   const menuTab = createElement("div", ["tab", "menu"], navTabTray);
-  const menuTabText = createElement("p", [], menuTab, "Menu");
+  createElement("p", [], menuTab, "Menu");
   const contactTab = createElement("div", ["tab", "contact"], navTabTray);
-  const contactTabText = createElement("p", [], contactTab, "Contact");
+  createElement("p", [], contactTab, "Contact");
 
   // Create Content Elements
 
