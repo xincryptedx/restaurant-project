@@ -1,1 +1,11 @@
+@font-face {
+  font-family: "MyFont";
+  src: url("./orbitron-variablefont_wght-webfont.woff") format("woff"),
+    url("./orbitron-variablefont_wght-webfont.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
 
+* {
+  font-family: "MyFont";
+}
