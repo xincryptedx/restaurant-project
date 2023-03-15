@@ -37,6 +37,7 @@ export default function createInitialElements() {
   createElement("p", [], contactTab, "Contact");
 
   // Create Content Elements
+  createElement("div", ["content"], containerDiv);
 
   // Create Footer Elements
   const footerDiv = createElement("div", ["footer"], containerDiv);
