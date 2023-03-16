@@ -1,9 +1,9 @@
-const path = require("path"); //node.js utility
+const path = require("path"); // node.js utility
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/index.js", //If more than one use optimization bc devServer
+  entry: "./src/index.js", // If more than one use optimization bc devServer
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
