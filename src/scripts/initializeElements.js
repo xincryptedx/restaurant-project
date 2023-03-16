@@ -1,3 +1,5 @@
+import HeaderImage from "../header/landscapeParchment.svg";
+
 export function createElement(elementType, classes, parent, textContent) {
   const element = document.createElement(elementType);
 
@@ -25,6 +27,8 @@ export default function createInitialElements() {
   // Create Header Elements w/ Classes
   const headerDiv = createElement("div", ["header"], containerDiv);
   createElement("p", ["title"], headerDiv, "The Legerdemain Lounge");
+  const headerBgImage = createElement("img", ["background"], headerDiv);
+  headerBgImage.src = HeaderImage;
 
   // Create Nav Elements w/ Classes
   const navDiv = createElement("div", ["nav"], containerDiv);
