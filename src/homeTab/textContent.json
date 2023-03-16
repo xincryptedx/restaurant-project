@@ -1,0 +1,34 @@
+{
+  "about": {
+    "title": "About Us...",
+    "text": [
+      "Originally built during the age of the Arathorian Empire and known as 'The Hocus Pocus Inn',",
+      "The Legerdemain Lounge is now a well know destination for adventures all throughout Azeroth.",
+      "Whether it is a cold drink or a warm bed, the Legerdemain Lounge can accomidate your needs."
+    ]
+  },
+
+  "hours": {
+    "title": "Hours of Operation",
+    "text": "We are happy to serve you every hour of every day of the year! *",
+    "subText": "* Excluding regularly scheduled maintainance."
+  },
+
+  "locations": {
+    "title": "Locations",
+    "text": [
+      "Arathi Highlands, Pre-619 K.C.",
+      "Above Crystalsong Forest, 619 - 626 K.C.",
+      "Above The Broken Isles, 626 K.C. - Present"
+    ],
+    "subText": "Temporal locations included for the chromatically abled."
+  },
+
+  "reviews": {
+    "title": "Customer Reviews",
+    "text": [
+      "The accomidations are lovely and the coffee pot is always full. I come here every day! -Trevor Page",
+      "De grub be good, but stay away from de gnoll stew. -Ol'Toomba"
+    ]
+  }
+}
