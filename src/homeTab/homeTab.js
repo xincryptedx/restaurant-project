@@ -15,11 +15,15 @@ export default function createHomeDiv() {
 
   const locationsDiv = createElement("div", ["locations"], element);
   createElement("p", ["title"], locationsDiv, TextContent.locations.title);
-  // Locations
+  TextContent.locations.text.forEach((line) => {
+    createElement("p", ["text"], locationsDiv, line);
+  });
 
   const reviewsDiv = createElement("div", ["reviews"], element);
   createElement("p", ["title"], reviewsDiv, TextContent.reviews.title);
-  // Reviews
+  TextContent.reviews.text.forEach((line) => {
+    createElement("p", ["text"], reviewsDiv, line);
+  });
 
   return element;
 }
