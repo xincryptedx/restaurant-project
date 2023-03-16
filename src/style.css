@@ -198,9 +198,25 @@ table {
 /* #region */
 .content {
   grid-area: contentDiv;
-
+  overflow-y: scroll;
   background-color: var(--content-bg-color);
 }
+
+/* Home */
+.home {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(4, 40%) / 1fr;
+  grid-template-areas:
+    "about"
+    "hours"
+    "locations"
+    "reviews";
+}
+
+/* #region */
+
+/* #endregion */
 
 /* #endregion */
 
