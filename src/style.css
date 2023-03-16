@@ -201,7 +201,6 @@ table {
 .content {
   height: 100%;
   grid-area: contentDiv;
-  overflow-y: scroll;
   background-color: var(--content-bg-color);
 }
 
@@ -218,6 +217,7 @@ table {
     "reviews";
   justify-items: center;
   align-items: center;
+  overflow-y: scroll;
 }
 
 .content .home div {
