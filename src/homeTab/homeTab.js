@@ -1,4 +1,5 @@
 import { createElement } from "../scripts/initializeElements";
+import TextContent from "./textContent.json";
 
 export default function createHomeDiv() {
   const element = createElement("div", ["home"]);
