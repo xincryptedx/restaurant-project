@@ -4,10 +4,22 @@ import TextContent from "./textContent.json";
 export default function createHomeDiv() {
   const element = createElement("div", ["home"]);
 
-  createElement("div", ["about"], element);
-  createElement("div", ["hours"], element);
-  createElement("div", ["locations"], element);
-  createElement("div", ["reviews"], element);
+  const aboutDiv = createElement("div", ["about"], element);
+  createElement("p", ["title"], aboutDiv, TextContent.about.title); // Don't try to join single lined text
+  createElement("p", ["text"], aboutDiv, TextContent.about.text.join(" ")); // Multiline text needs joined
+
+  const hoursDiv = createElement("div", ["hours"], element);
+  createElement("p", ["title"], hoursDiv, TextContent.hours.title);
+  createElement("p", ["text"], hoursDiv, TextContent.hours.text);
+  createElement("p", ["sub-text"], hoursDiv, TextContent.hours.subText);
+
+  const locationsDiv = createElement("div", ["locations"], element);
+  createElement("p", ["title"], locationsDiv, TextContent.locations.title);
+  // Locations
+
+  const reviewsDiv = createElement("div", ["reviews"], element);
+  createElement("p", ["title"], reviewsDiv, TextContent.reviews.title);
+  // Reviews
 
   return element;
 }
