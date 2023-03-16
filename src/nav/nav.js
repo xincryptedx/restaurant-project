@@ -1,6 +1,6 @@
-import HomeTab from "./homeTab";
-import MenuTab from "./menuTab";
-import ContactTab from "./contactTab";
+import HomeTab from "../homeTab/homeTab";
+import MenuTab from "../menuTab/menuTab";
+import ContactTab from "../contactTab/contactTab";
 
 export default function navController() {
   const navTabs = document.querySelectorAll(".nav .tab");

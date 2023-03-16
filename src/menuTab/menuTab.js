@@ -1,4 +1,4 @@
-import { createElement } from "./initializeElements";
+import { createElement } from "../scripts/initializeElements";
 
 export default function createMenuDiv() {
   const element = createElement("div", ["menu"]);

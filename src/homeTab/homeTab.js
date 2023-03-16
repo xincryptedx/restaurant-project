@@ -1,4 +1,4 @@
-import { createElement } from "./initializeElements";
+import { createElement } from "../scripts/initializeElements";
 
 export default function createHomeDiv() {
   const element = createElement("div", ["home"]);
