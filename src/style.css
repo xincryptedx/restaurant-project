@@ -203,6 +203,7 @@ table {
 }
 
 /* Home */
+/* #region */
 .home {
   height: 100%;
   display: grid;
@@ -214,7 +215,21 @@ table {
     "reviews";
 }
 
-/* #region */
+.home .about {
+  grid-area: about;
+}
+
+.home .hours {
+  grid-area: hours;
+}
+
+.home .locations {
+  grid-area: locations;
+}
+
+.home .reviews {
+  grid-area: reviews;
+}
 
 /* #endregion */
 
