@@ -202,6 +202,7 @@ table {
   height: 100%;
   grid-area: contentDiv;
   background-color: var(--content-bg-color);
+  position: relative;
 }
 
 /* Home */
@@ -218,6 +219,30 @@ table {
   justify-items: center;
   align-items: center;
   overflow-y: scroll;
+}
+
+.content::before,
+.content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none;
+}
+
+.content::before {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.content::after {
+  bottom: 0;
 }
 
 .content .home div {
