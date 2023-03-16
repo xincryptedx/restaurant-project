@@ -163,10 +163,19 @@ table {
 /* #region */
 .header {
   grid-area: headerDiv;
+  display: grid;
   grid-template: 1fr / 1fr;
   grid-template-areas: "header";
 
   background-color: var(--header-bg-color);
+}
+
+.header .background {
+  grid-area: header;
+}
+
+.header .title {
+  grid-area: header;
 }
 
 /* #endregion */
