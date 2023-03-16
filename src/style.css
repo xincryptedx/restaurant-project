@@ -230,8 +230,8 @@ table {
   height: 20px;
   background-image: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
+    hsla(0, 0%, 100%, 0),
+    var(--content-bg-color)
   );
   pointer-events: none;
 }
