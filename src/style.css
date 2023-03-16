@@ -140,6 +140,8 @@ table {
 
   --content-bg-color: hsl(187, 51%, 75%);
 
+  --content-card-bg-color: hsl(95, 80%, 50%);
+
   --footer-bg-color: hsl(106, 60%, 39%);
 }
 
@@ -197,6 +199,7 @@ table {
 /* Content Div */
 /* #region */
 .content {
+  height: 100%;
   grid-area: contentDiv;
   overflow-y: scroll;
   background-color: var(--content-bg-color);
@@ -204,7 +207,7 @@ table {
 
 /* Home */
 /* #region */
-.home {
+.content .home {
   height: 100%;
   display: grid;
   grid-template: repeat(4, 40%) / 1fr;
@@ -213,21 +216,29 @@ table {
     "hours"
     "locations"
     "reviews";
+  justify-items: center;
+  align-items: center;
 }
 
-.home .about {
+.content .home div {
+  background-color: var(--content-card-bg-color);
+  height: 80%;
+  width: 80%;
+}
+
+.content .home .about {
   grid-area: about;
 }
 
-.home .hours {
+.content .home .hours {
   grid-area: hours;
 }
 
-.home .locations {
+.content .home .locations {
   grid-area: locations;
 }
 
-.home .reviews {
+.content .home .reviews {
   grid-area: reviews;
 }
 
