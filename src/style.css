@@ -229,8 +229,8 @@ table {
 .content .background {
   height: 100%;
   width: 100%;
-  grid-column: 1 / -1;
-  grid-row: 1/-1;
+  grid-column: 1 / span all;
+  grid-row: 1 / span all;
   z-index: 0;
 }
 
