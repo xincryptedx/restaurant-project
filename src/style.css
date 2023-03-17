@@ -325,10 +325,24 @@ table {
 
 .content .home .locations {
   grid-area: locations;
+  display: grid;
+  grid-template: 1fr 4fr / 1fr;
+  grid-template-areas:
+    "title"
+    "text";
+  align-items: center;
+  justify-items: center;
 }
 
 .content .home .reviews {
   grid-area: reviews;
+  display: grid;
+  grid-template: 1fr 4fr / 1fr;
+  grid-template-areas:
+    "title"
+    "text";
+  align-items: center;
+  justify-items: center;
 }
 
 /* #endregion */
