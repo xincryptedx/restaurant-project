@@ -1,4 +1,5 @@
 import HeaderImage from "../header/landscapeParchment.svg";
+import Attribution from "../footer/attribution.json";
 
 export function createElement(elementType, classes, parent, textContent) {
   const element = document.createElement(elementType);
