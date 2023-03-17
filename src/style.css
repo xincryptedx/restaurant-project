@@ -281,6 +281,20 @@ table {
   width: 90%;
 }
 
+.content .home div p {
+  width: 70%;
+}
+
+.content .home .title {
+  grid-area: title;
+  text-align: center;
+}
+
+.content .home .text {
+  grid-area: text;
+  text-align: center;
+}
+
 .content .home .about {
   grid-area: about;
   display: grid;
@@ -288,14 +302,8 @@ table {
   grid-template-areas:
     "title"
     "text";
-}
-
-.content .home .about .title {
-  grid-area: title;
-}
-
-.content .home .about .text {
-  grid-area: text;
+  align-items: center;
+  justify-items: center;
 }
 
 .content .home .hours {
