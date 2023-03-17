@@ -20,17 +20,18 @@ export default function createHomeDiv() {
 
   const locationsDiv = createElement("div", ["locations"], element);
   createElement("p", ["title"], locationsDiv, TextContent.locations.title);
+  const locationsWrapper = createElement("div", ["wrapper"], locationsDiv);
   TextContent.locations.text.forEach((line) => {
-    createElement("p", ["text"], locationsDiv, line);
+    createElement("p", ["text-entry"], locationsWrapper, line);
   });
   const locationsBgImg = createElement("img", ["background"], locationsDiv);
   locationsBgImg.src = BackgroundImage;
 
   const reviewsDiv = createElement("div", ["reviews"], element);
   createElement("p", ["title"], reviewsDiv, TextContent.reviews.title);
-  const reviewsContainer = createElement("div", ["wrapper"], reviewsDiv);
+  const reviewsWrapper = createElement("div", ["wrapper"], reviewsDiv);
   TextContent.reviews.text.forEach((line) => {
-    createElement("p", ["text-entry"], reviewsContainer, line);
+    createElement("p", ["text-entry"], reviewsWrapper, line);
   });
   const reviewsBgImg = createElement("img", ["background"], reviewsDiv);
   reviewsBgImg.src = BackgroundImage;
