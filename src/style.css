@@ -166,16 +166,22 @@ table {
   display: grid;
   grid-template: 1fr / 1fr;
   grid-template-areas: "header";
+  align-items: center;
+  justify-items: center;
 
   background-color: var(--header-bg-color);
 }
 
 .header .background {
   grid-area: header;
+  height: 7vh;
+  width: 90%;
+  z-index: 0;
 }
 
 .header .title {
   grid-area: header;
+  z-index: 1;
 }
 
 /* #endregion */
