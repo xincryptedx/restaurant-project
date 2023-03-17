@@ -1,0 +1,91 @@
+{
+  "appetizers": {
+    "title": "Appetizers",
+    "entry 1": {
+      "name": "Sweet Potato Bread",
+      "description": "Fresh baked semi-sweet bread served with melted butter.",
+      "price": "1 Gold 60 Silver"
+    },
+
+    "entry 2": {
+      "name": "Azsunian Olives",
+      "description": "Locally sourced and soaked in magically-aged arcwine.",
+      "price": "85 Silver"
+    },
+    "entry 3": {
+      "name": "Dalaran Rice Pudding",
+      "description": "Savory and fluffy, made from exotic Pandarian imports.",
+      "price": "5 Gold"
+    },
+    "entry 4": {
+      "name": "Briny Hardcheese",
+      "description": "Salty and sharp. Served with crusty flatbread.",
+      "price": "2 Gold 45 Silver"
+    }
+  },
+
+  "entrees": {
+    "title": "Entrees",
+    "entry 1": {
+      "name": "Mead Basted Caribou",
+      "description": "Borean caribou flank marinated and slow roasted to perfection.",
+      "price": "1 Gold 60 Silver"
+    },
+
+    "entry 2": {
+      "name": "Smoked Elderhorn",
+      "description": "Smoked for fourteen hours over Valsharahn oak logs.",
+      "price": "2 Gold 50 Silver"
+    },
+    "entry 3": {
+      "name": "Thundertotem Rice Cake",
+      "description": "Made with Highmountain salmon. Vegetarian option available.",
+      "price": "2 Gold 50 Silver"
+    },
+    "entry 4": {
+      "name": "Scallion Kimchi",
+      "description": "Fresh scallions, cabbage and radishes make this zesty dish a local favorite.",
+      "price": "2 Gold 50 Silver"
+    }
+  },
+
+  "beverages": {
+    "title": "Beverages",
+    "entry 1": {
+      "name": "Ley-Enriched Water",
+      "description": "Cool and crisp. Quadruple-filtered and infused with arcane energy.",
+      "price": "2 Gold 50 Silver"
+    },
+
+    "entry 2": {
+      "name": "Pungent Seal Whey",
+      "description": "It's better than it sounds.",
+      "price": "85 Silver"
+    },
+    "entry 3": {
+      "name": "Legendermainy Light Roast",
+      "description": "A smooth and silky coffee blend with hints of hazelnut.",
+      "price": "2 Gold 50 Silver"
+    },
+    "entry 4": {
+      "name": "Northrend Honey Mead",
+      "description": "Originally brewed by the Vrykul, now a popular staple for Inns everywhere.",
+      "price": "50 Copper"
+    }
+  },
+
+  "desserts": {
+    "title": "Desserts",
+    "entry 1": {
+      "name": "Honey Croissant",
+      "description": "Fresh baked daily with warm nuts and organic honey.",
+      "price": "5 Gold"
+    },
+
+    "entry 2": {
+      "name": "Val'sharah Berry Pie",
+      "description": "Candied arcberries fill this flakey, buttery crust.",
+      "price": "5 Gold"
+    }
+  }
+}
