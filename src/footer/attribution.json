@@ -1,4 +1,6 @@
 {
-  "landscapeParchment": "Landscape Parchment - OpenClipart - https://freesvg.org/revans2-landscape-parchment-background",
-  "squareParchment": "Parchment - OpenClipart - https://freesvg.org/parchment"
+  "entries": [
+    "Landscape Parchment - <a href='https://freesvg.org/revans2-landscape-parchment-background'>OpenClipart</a>",
+    "Parchment - <a href='https://freesvg.org/parchment'>OpenClipart</a>"
+  ]
 }

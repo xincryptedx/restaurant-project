@@ -49,4 +49,8 @@ export default function createInitialElements() {
   const authorP = createElement("p", ["author"], footerDiv);
   authorP.innerHTML =
     "Created by <a href='https://github.com/xincryptedx'>xIncryptedx</a>";
+  Attribution.entries.forEach((entry) => {
+    const entryElement = createElement("p", ["attribution"], footerDiv);
+    entryElement.innerHTML = entry;
+  });
 }
