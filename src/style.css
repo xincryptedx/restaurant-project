@@ -288,11 +288,20 @@ table {
 .content .home .title {
   grid-area: title;
   text-align: center;
+  align-self: end;
 }
 
 .content .home .text {
   grid-area: text;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.content .home .sub-text {
+  grid-area: sub-text;
+  text-align: center;
+  align-self: start;
+  padding-bottom: 10px;
 }
 
 .content .home .wrapper {
@@ -302,11 +311,6 @@ table {
   text-align: center;
   align-items: center;
   justify-items: center;
-}
-
-.content .home .sub-text {
-  grid-area: sub-text;
-  text-align: center;
 }
 
 .content .home .about {
