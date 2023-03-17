@@ -28,8 +28,9 @@ export default function createHomeDiv() {
 
   const reviewsDiv = createElement("div", ["reviews"], element);
   createElement("p", ["title"], reviewsDiv, TextContent.reviews.title);
+  const reviewsContainer = createElement("div", ["wrapper"], reviewsDiv);
   TextContent.reviews.text.forEach((line) => {
-    createElement("p", ["text"], reviewsDiv, line);
+    createElement("p", ["text"], reviewsContainer, line);
   });
   const reviewsBgImg = createElement("img", ["background"], reviewsDiv);
   reviewsBgImg.src = BackgroundImage;
