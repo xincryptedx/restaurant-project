@@ -140,7 +140,7 @@ table {
 
   --content-bg-color: hsl(187, 51%, 75%);
 
-  --content-card-bg-color: hsl(95, 80%, 50%);
+  --content-card-bg-color: hsla(95, 80%, 50%, 0);
 
   --footer-bg-color: hsl(106, 60%, 39%);
 }
