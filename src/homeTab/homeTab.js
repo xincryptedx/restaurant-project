@@ -1,5 +1,6 @@
 import { createElement } from "../scripts/initializeElements";
 import TextContent from "./textContent.json";
+import BackgroundImage from "../content/squareParchment.svg";
 
 export default function createHomeDiv() {
   const element = createElement("div", ["home"]);
@@ -7,6 +8,8 @@ export default function createHomeDiv() {
   const aboutDiv = createElement("div", ["about"], element);
   createElement("p", ["title"], aboutDiv, TextContent.about.title); // Don't try to join single lined text
   createElement("p", ["text"], aboutDiv, TextContent.about.text.join(" ")); // Multiline text needs joined
+  const aboutBgImg = createElement("img", ["background"], aboutDiv);
+  aboutBgImg.src = BackgroundImage;
 
   const hoursDiv = createElement("div", ["hours"], element);
   createElement("p", ["title"], hoursDiv, TextContent.hours.title);
