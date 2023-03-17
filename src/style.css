@@ -213,6 +213,11 @@ table {
   border-radius: 5px 5px 0px 0px;
 }
 
+.nav .tab p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 /* #endregion */
 
 /* Content Div */
