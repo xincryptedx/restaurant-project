@@ -289,6 +289,10 @@ table {
   width: 90%;
 }
 
+.content .home img {
+  filter: drop-shadow(2px 2px 4px grey);
+}
+
 .content .home div p {
   width: 70%;
 }
