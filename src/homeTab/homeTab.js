@@ -15,18 +15,24 @@ export default function createHomeDiv() {
   createElement("p", ["title"], hoursDiv, TextContent.hours.title);
   createElement("p", ["text"], hoursDiv, TextContent.hours.text);
   createElement("p", ["sub-text"], hoursDiv, TextContent.hours.subText);
+  const hoursBgImg = createElement("img", ["background"], hoursDiv);
+  hoursBgImg.src = BackgroundImage;
 
   const locationsDiv = createElement("div", ["locations"], element);
   createElement("p", ["title"], locationsDiv, TextContent.locations.title);
   TextContent.locations.text.forEach((line) => {
     createElement("p", ["text"], locationsDiv, line);
   });
+  const locationsBgImg = createElement("img", ["background"], locationsDiv);
+  locationsBgImg.src = BackgroundImage;
 
   const reviewsDiv = createElement("div", ["reviews"], element);
   createElement("p", ["title"], reviewsDiv, TextContent.reviews.title);
   TextContent.reviews.text.forEach((line) => {
     createElement("p", ["text"], reviewsDiv, line);
   });
+  const reviewsBgImg = createElement("img", ["background"], reviewsDiv);
+  reviewsBgImg.src = BackgroundImage;
 
   return element;
 }
