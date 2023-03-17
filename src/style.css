@@ -177,6 +177,7 @@ table {
   height: 7vh;
   width: 90%;
   z-index: 0;
+  filter: drop-shadow(2px 2px 4px rgb(56, 56, 56));
 }
 
 .header .title {
