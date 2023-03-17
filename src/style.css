@@ -295,6 +295,15 @@ table {
   text-align: center;
 }
 
+.content .home .wrapper {
+  grid-area: text;
+  background: transparent;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
 .content .home .sub-text {
   grid-area: sub-text;
   text-align: center;
