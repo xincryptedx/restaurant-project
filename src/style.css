@@ -222,20 +222,9 @@ table {
   position: relative;
 }
 
-/* Home */
-/* #region */
-.content .home {
+.content .background {
   height: 100%;
-  display: grid;
-  grid-template: repeat(4, 40%) / 1fr;
-  grid-template-areas:
-    "about"
-    "hours"
-    "locations"
-    "reviews";
-  justify-items: center;
-  align-items: center;
-  overflow-y: scroll;
+  width: 100%;
 }
 
 .content::before,
@@ -260,6 +249,21 @@ table {
 
 .content::after {
   bottom: 0;
+}
+/* Home */
+/* #region */
+.content .home {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(4, 40%) / 1fr;
+  grid-template-areas:
+    "about"
+    "hours"
+    "locations"
+    "reviews";
+  justify-items: center;
+  align-items: center;
+  overflow-y: scroll;
 }
 
 .content .home div {
