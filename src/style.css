@@ -382,8 +382,17 @@ table {
 /* #region */
 .footer {
   grid-area: footerDiv;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  grid-template-areas:
+    "author ."
+    "author .";
 
   background-color: var(--footer-bg-color);
+}
+
+.footer .author {
+  grid-area: author;
 }
 
 /* #endregion */
