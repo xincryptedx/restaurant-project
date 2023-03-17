@@ -395,4 +395,8 @@ table {
   grid-area: author;
 }
 
+.footer .attribution {
+  font-size: 0.7rem;
+}
+
 /* #endregion */
