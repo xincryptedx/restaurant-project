@@ -376,6 +376,57 @@ table {
 
 /* #endregion */
 
+/* Menu */
+/* #region */
+.content .menu {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(4, min-content 1fr) / 1fr;
+  grid-template-areas:
+    "appetizers-title"
+    "appetizers-wrapper"
+    "entrees-title"
+    "entrees-wrapper"
+    "beverages-title"
+    "beverages-wrapper"
+    "desserts-title"
+    "desserts-wrapper";
+}
+
+.content .menu .section.title.appetizers {
+  grid-area: appetizers-title;
+}
+
+.content .menu .wrapper.appetizers {
+  grid-area: appetizers-wrapper;
+}
+
+.content .menu .section.title.entrees {
+  grid-area: entrees-title;
+}
+
+.content .menu .wrapper.entrees {
+  grid-area: entrees-wrapper;
+}
+
+.content .menu .section.title.beverages {
+  grid-area: beverages-title;
+}
+
+.content .menu .wrapper.beverages {
+  grid-area: beverages-wrapper;
+}
+
+.content .menu .section.title.desserts {
+  grid-area: desserts-title;
+}
+
+.content .menu .wrapper.desserts {
+  grid-area: desserts-wrapper;
+}
+
+/* #endregion */
+
 /* #endregion */
 
 /* Footer Div */
