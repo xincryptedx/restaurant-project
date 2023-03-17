@@ -240,13 +240,14 @@ table {
   position: absolute;
   left: 0;
   right: 0;
-  height: 35px;
+  height: 20px;
   background-image: linear-gradient(
     to bottom,
     hsla(0, 0%, 100%, 0),
     var(--content-bg-color)
   );
   pointer-events: none;
+  z-index: 2;
 }
 
 .content::before {
@@ -257,6 +258,7 @@ table {
 .content::after {
   bottom: 0;
 }
+
 /* Home */
 /* #region */
 .content .home {
@@ -275,8 +277,8 @@ table {
 
 .content .home div {
   background-color: var(--content-card-bg-color);
-  height: 80%;
-  width: 80%;
+  height: 90%;
+  width: 90%;
 }
 
 .content .home .about {
