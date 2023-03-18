@@ -153,7 +153,7 @@ table {
 /* #region */
 .container {
   display: grid;
-  grid-template: 8vh 10vh 77vh 5vh/ 1fr;
+  grid-template: 8vh 10vh 75vh 7vh/ 1fr;
   grid-template-areas:
     "headerDiv"
     "navDiv"
