@@ -426,6 +426,7 @@ table {
   width: 100%;
   height: 100%;
   z-index: -1;
+  filter: drop-shadow(2px 2px 4px grey);
 }
 
 .content .menu .wrapper .entry {
@@ -439,7 +440,7 @@ table {
   gap: 15px 0px;
   background-color: var(--content-card-bg-color);
   width: 100%;
-  height: 10vh;
+  height: 12vh;
 }
 
 .content .menu .wrapper .entry.spacer {
@@ -448,10 +449,13 @@ table {
 
 .content .menu .wrapper .entry .title {
   grid-area: title;
+  font-weight: bold;
 }
 
 .content .menu .wrapper .entry .price {
   grid-area: price;
+  justify-self: end;
+  font-style: italic;
 }
 
 .content .menu .wrapper .entry .description {
