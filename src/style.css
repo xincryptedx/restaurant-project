@@ -498,6 +498,61 @@ table {
 
 /* #endregion */
 
+/* Contact */
+/* #region */
+.content .contact {
+  height: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / 1fr;
+  grid-template-areas:
+    "leylines"
+    "message";
+  justify-items: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.content .contact div {
+  background-color: var(--content-card-bg-color);
+  height: 90%;
+  width: 90%;
+}
+
+.content .contact .background {
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / span all;
+  grid-row: 1 / span all;
+  z-index: 0;
+}
+
+.content .contact .leylines {
+  grid-area: leylines;
+  display: grid;
+  grid-template: 1fr 2fr / 1fr;
+  grid-template-areas:
+    "title"
+    "text";
+  align-items: center;
+  justify-items: center;
+}
+
+.content .contact .title {
+  grid-area: title;
+  text-align: center;
+  align-self: end;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.content .contact .text {
+  grid-area: text;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* #endregion */
+
 /* #endregion */
 
 /* Footer Div */
