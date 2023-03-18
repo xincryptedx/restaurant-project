@@ -30,7 +30,7 @@ function createMenu(category, parent) {
       );
     }
   });
-  const bgImg = createElement("img", ["background"], parent);
+  const bgImg = createElement("img", ["background"], wrapper);
   bgImg.src = BackgroundImage;
 }
 
