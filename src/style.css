@@ -559,7 +559,6 @@ table {
 }
 
 .content .contact .text {
-  grid-area: text;
   text-align: center;
   padding-bottom: 10px;
 }
