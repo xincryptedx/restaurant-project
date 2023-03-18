@@ -7,6 +7,8 @@ function createMenu(category, parent) {
   createElement("p", ["title", category], section, TextContent[category].title);
   const wrapper = createElement("div", ["wrapper", category], parent);
 
+  createElement("div", ["entry", "spacer"], wrapper);
+
   Object.keys(TextContent[category]).forEach((key) => {
     if (key !== "title") {
       const entry = createElement("div", ["entry", category], wrapper);
@@ -30,6 +32,9 @@ function createMenu(category, parent) {
       );
     }
   });
+
+  createElement("div", ["entry", "spacer"], wrapper);
+
   const bgImg = createElement("img", ["background"], wrapper);
   bgImg.src = BackgroundImage;
 }

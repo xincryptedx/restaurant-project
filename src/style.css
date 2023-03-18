@@ -413,6 +413,10 @@ table {
 .content .menu .wrapper {
   position: relative;
   display: grid;
+  justify-items: center;
+
+  height: min-content;
+  width: 90vw;
 }
 
 .content .menu .wrapper .background {
@@ -426,34 +430,29 @@ table {
 
 .content .menu .wrapper .entry {
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 3fr 1fr 1fr;
   grid-template-areas:
-    "title price"
-    "description description";
+    ". . . ."
+    ". title price ."
+    ". description description ."
+    ". . . .";
 
-  height: min-content;
-  width: 90vw;
   background-color: var(--content-card-bg-color);
+  width: 100%;
+  height: 10vh;
 }
 
 .content .menu .wrapper .entry .title {
   grid-area: title;
-  padding-top: 20px;
-  padding-left: 40px;
 }
 
 .content .menu .wrapper .entry .price {
   grid-area: price;
-  padding-top: 20px;
-  padding-right: 20px;
 }
 
 .content .menu .wrapper .entry .description {
   grid-area: description;
   font-size: 0.9rem;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 20px;
 }
 
 .content .menu .section.title.appetizers {
