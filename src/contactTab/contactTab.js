@@ -23,11 +23,24 @@ export default function createContactDiv() {
     messageForm,
     "Subject:"
   );
+  subjectLabel.setAttribute("for", "subject-input");
   const subjectInput = createElement("input", ["subject"], messageForm);
   subjectInput.setAttribute("type", "text");
   subjectInput.setAttribute("id", "subject-input");
+  const messageContentLabel = createElement(
+    "label",
+    ["message-content"],
+    messageForm,
+    "Message:"
+  );
+  messageContentLabel.setAttribute("for", "message-content-textarea");
+  const messageContentTextarea = createElement(
+    "textarea",
+    ["message-content"],
+    messageForm
+  );
+  messageContentTextarea.setAttribute("id", "message-content-textarea");
 
-  subjectLabel.setAttribute("for", "subject-input");
   const messageBgImg = createElement("img", ["background"], messageDiv);
   messageBgImg.src = BackgroundImage;
 
