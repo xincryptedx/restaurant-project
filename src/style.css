@@ -503,7 +503,7 @@ table {
 .content .contact {
   height: 100%;
   display: grid;
-  grid-template: 50% 75% / 1fr;
+  grid-template: 50% 90% / 1fr;
   grid-template-areas:
     "leylines"
     "message";
@@ -546,6 +546,7 @@ table {
   align-self: end;
   font-size: 1.2rem;
   font-weight: bold;
+  justify-self: center;
 }
 
 .content .contact .text {
@@ -572,6 +573,7 @@ table {
     "title title"
     "form form"
     ". submit";
+  row-gap: 15px;
 }
 
 .content .contact .message form {
@@ -583,6 +585,11 @@ table {
     ". subject subject ."
     ". message-content-label message-content-label ."
     ". message-content message-content .";
+}
+
+.content .contact label {
+  align-self: center;
+  font-style: italic;
 }
 
 .content .contact label.subject {
