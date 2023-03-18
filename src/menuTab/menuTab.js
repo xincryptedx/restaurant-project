@@ -1,6 +1,32 @@
 import { createElement } from "../scripts/initializeElements";
 import TextContent from "./textContent.json";
 
+function createMenu(category, wraper) {
+  Object.keys(TextContent.appetizers).forEach((key) => {
+    if (key !== "title") {
+      const entry = createElement("div", ["entry", category], wraper);
+      createElement(
+        "p",
+        ["title", category],
+        entry,
+        TextContent.appetizers[key].name
+      );
+      createElement(
+        "p",
+        ["description", category],
+        entry,
+        TextContent.appetizers[key].description
+      );
+      createElement(
+        "p",
+        ["price", category],
+        entry,
+        TextContent.appetizers[key].price
+      );
+    }
+  });
+}
+
 export default function createMenuDiv() {
   const element = createElement("div", ["menu"]);
 
@@ -15,16 +41,7 @@ export default function createMenuDiv() {
     ["wrapper", "appetizers"],
     element
   );
-  Object.keys(TextContent.appetizers).forEach((key) => {
-    if (key !== "title") {
-      createElement(
-        "div",
-        ["entry", "appetizers"],
-        appetizersWrapper,
-        TextContent.appetizers[key].value
-      );
-    }
-  });
+  createMenu("appetizers", appetizersWrapper);
 
   createElement(
     "div",
