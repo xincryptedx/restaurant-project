@@ -624,6 +624,20 @@ table {
 
 .content .contact .submit {
   grid-area: submit;
+  background-color: var(--form-bg-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.content .contact .submit:hover {
+  background-color: hsl(45, 33%, 61%);
+  border: 2px solid grey;
+}
+
+.content .contact .submit:active {
+  background-color: hsl(43, 18%, 51%);
 }
 
 /* #endregion */
