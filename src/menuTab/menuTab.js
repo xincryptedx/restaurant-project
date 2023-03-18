@@ -31,7 +31,7 @@ export default function createMenuDiv() {
   const element = createElement("div", ["menu"]);
 
   createElement(
-    "div",
+    "p",
     ["section", "title", "appetizers"],
     element,
     TextContent.appetizers.title
@@ -44,7 +44,7 @@ export default function createMenuDiv() {
   createMenu("appetizers", appetizersWrapper);
 
   createElement(
-    "div",
+    "p",
     ["section", "title", "entrees"],
     element,
     TextContent.entrees.title
@@ -53,7 +53,7 @@ export default function createMenuDiv() {
   createMenu("entrees", entreesWrapper);
 
   createElement(
-    "div",
+    "p",
     ["section", "title", "beverages"],
     element,
     TextContent.beverages.title
@@ -66,7 +66,7 @@ export default function createMenuDiv() {
   createMenu("beverages", beveragesWrapper);
 
   createElement(
-    "div",
+    "p",
     ["section", "title", "desserts"],
     element,
     TextContent.desserts.title

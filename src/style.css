@@ -140,7 +140,7 @@ table {
 
   --content-bg-color: hsl(187, 51%, 75%);
 
-  --content-card-bg-color: hsla(95, 80%, 50%, 0);
+  --content-card-bg-color: hsla(95, 80%, 50%, 1);
 
   --footer-bg-color: hsl(106, 60%, 39%);
 }
@@ -391,10 +391,13 @@ table {
     "beverages-wrapper"
     "desserts-title"
     "desserts-wrapper";
+  justify-items: center;
   overflow-y: scroll;
 }
 
-.content .menu .wrapper {
+.content .menu .section.title {
+  height: 8vh;
+  text-align: center;
 }
 
 .content .menu .wrapper .entry {
@@ -403,6 +406,10 @@ table {
   grid-template-areas:
     "title price"
     "description description";
+
+  height: 10vh;
+  width: 90vw;
+  background-color: var(--content-card-bg-color);
 }
 
 .content .menu .wrapper .entry .title {
