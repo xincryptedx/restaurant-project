@@ -649,14 +649,16 @@ table {
 .footer {
   grid-area: footerDiv;
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr 1fr 1fr/ 1fr 1fr;
   grid-template-areas:
+    "author ."
     "author ."
     "author .";
   align-items: center;
   justify-items: center;
 
   background-color: var(--footer-bg-color);
+  color: white;
 }
 
 .footer .author {
