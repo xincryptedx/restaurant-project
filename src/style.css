@@ -391,6 +391,7 @@ table {
     "beverages-wrapper"
     "desserts-title"
     "desserts-wrapper";
+  overflow-y: scroll;
 }
 
 .content .menu .section.title.appetizers {
