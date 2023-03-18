@@ -207,7 +207,7 @@ table {
 
 .nav .tab {
   background-color: var(--nav-tab-bg-color);
-
+  color: white;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -217,6 +217,8 @@ table {
   align-self: end;
   justify-self: center;
   border-radius: 10px 10px 0px 0px;
+  border: 1px solid black;
+  border-bottom: none;
 }
 
 .nav .tab p {
