@@ -149,6 +149,10 @@ table {
   --footer-bg-color: hsla(0, 0%, 0%, 0.75);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Containter Div */
 /* #region */
 .container {
@@ -672,11 +676,11 @@ table {
 
 .footer .author {
   grid-area: author;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .footer .attribution {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 /* #endregion */
