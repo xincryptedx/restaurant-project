@@ -7,26 +7,26 @@ function createMenu(category, parent) {
   createElement("p", ["title", category], section, TextContent[category].title);
   const wrapper = createElement("div", ["wrapper", category], parent);
 
-  Object.keys(TextContent.appetizers).forEach((key) => {
+  Object.keys(TextContent[category]).forEach((key) => {
     if (key !== "title") {
       const entry = createElement("div", ["entry", category], wrapper);
       createElement(
         "p",
         ["title", category],
         entry,
-        TextContent.appetizers[key].name
+        TextContent[category][key].name
       );
       createElement(
         "p",
         ["description", category],
         entry,
-        TextContent.appetizers[key].description
+        TextContent[category][key].description
       );
       createElement(
         "p",
         ["price", category],
         entry,
-        TextContent.appetizers[key].price
+        TextContent[category][key].price
       );
     }
   });
