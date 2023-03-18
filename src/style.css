@@ -574,11 +574,13 @@ table {
 .content .contact .message {
   grid-area: message;
   display: grid;
-  grid-template: 1fr 6fr 1fr/ 1fr 1fr;
+  grid-template: 0.5fr 1fr 6fr 1fr 0.5fr/ 1fr 1fr;
   grid-template-areas:
+    ". ."
     "title title"
     "form form"
-    ". submit";
+    ". submit"
+    ". .";
   row-gap: 15px;
 }
 
