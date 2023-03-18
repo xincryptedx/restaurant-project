@@ -412,6 +412,7 @@ table {
 
 .content .menu .wrapper {
   position: relative;
+  display: grid;
 }
 
 .content .menu .wrapper .background {
@@ -437,14 +438,22 @@ table {
 
 .content .menu .wrapper .entry .title {
   grid-area: title;
+  padding-top: 20px;
+  padding-left: 40px;
 }
 
 .content .menu .wrapper .entry .price {
   grid-area: price;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
 .content .menu .wrapper .entry .description {
   grid-area: description;
+  font-size: 0.9rem;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 .content .menu .section.title.appetizers {
