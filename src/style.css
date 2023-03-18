@@ -395,9 +395,13 @@ table {
   overflow-y: scroll;
 }
 
-.content .menu .section.title {
-  height: 8vh;
-  text-align: center;
+.content .menu .section {
+  display: grid;
+  height: 10vh;
+}
+
+.content .menu .section .title {
+  align-self: center;
 }
 
 .content .menu .wrapper .entry {

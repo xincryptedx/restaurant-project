@@ -30,10 +30,15 @@ function createMenu(category, wraper) {
 export default function createMenuDiv() {
   const element = createElement("div", ["menu"]);
 
+  const appetizersSection = createElement(
+    "div",
+    ["section", "appetizers"],
+    element
+  );
   createElement(
     "p",
-    ["section", "title", "appetizers"],
-    element,
+    ["title", "appetizers"],
+    appetizersSection,
     TextContent.appetizers.title
   );
   const appetizersWrapper = createElement(
@@ -44,7 +49,7 @@ export default function createMenuDiv() {
   createMenu("appetizers", appetizersWrapper);
 
   createElement(
-    "p",
+    "div",
     ["section", "title", "entrees"],
     element,
     TextContent.entrees.title
@@ -53,7 +58,7 @@ export default function createMenuDiv() {
   createMenu("entrees", entreesWrapper);
 
   createElement(
-    "p",
+    "div",
     ["section", "title", "beverages"],
     element,
     TextContent.beverages.title
@@ -66,7 +71,7 @@ export default function createMenuDiv() {
   createMenu("beverages", beveragesWrapper);
 
   createElement(
-    "p",
+    "div",
     ["section", "title", "desserts"],
     element,
     TextContent.desserts.title
