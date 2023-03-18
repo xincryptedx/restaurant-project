@@ -602,6 +602,7 @@ table {
   grid-area: subject;
   height: 1.5rem;
   background-color: var(--form-bg-color);
+  border: 1px solid grey;
 }
 
 .content .contact label.message-content {
@@ -611,6 +612,7 @@ table {
 .content .contact textarea.message-content {
   grid-area: message-content;
   background-color: var(--form-bg-color);
+  border: 1px solid grey;
   resize: none;
 }
 
