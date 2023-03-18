@@ -581,8 +581,24 @@ table {
   grid-template-areas:
     "subject-label subject-label"
     "subject subject"
-    "content-label content-label"
-    "content content";
+    "message-content-label message-content-label"
+    "message-content message-content";
+}
+
+.content .contact label.subject {
+  grid-area: subject-label;
+}
+
+.content .contact input.subject {
+  grid-area: subject;
+}
+
+.content .contact label.message-content {
+  grid-area: message-content-label;
+}
+
+.content .contact input.message-content {
+  grid-area: message-content;
 }
 
 /* #endregion */
