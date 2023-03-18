@@ -11,10 +11,13 @@ export default function createContactDiv() {
   TextContent.leylines.text.forEach((line) => {
     createElement("p", ["text"], leylinesWrapper, line);
   });
-  const aboutBgImg = createElement("img", ["background"], leylinesDiv);
-  aboutBgImg.src = BackgroundImage;
+  const leylinesBgImg = createElement("img", ["background"], leylinesDiv);
+  leylinesBgImg.src = BackgroundImage;
 
   const messageDiv = createElement("div", ["message"], element);
+
+  const messageBgImg = createElement("img", ["background"], messageDiv);
+  messageBgImg.src = BackgroundImage;
 
   return element;
 }
