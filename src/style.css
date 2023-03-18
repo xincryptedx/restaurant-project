@@ -620,6 +620,10 @@ table {
   resize: none;
 }
 
+.content .contact .submit {
+  grid-area: submit;
+}
+
 /* #endregion */
 
 /* #endregion */
