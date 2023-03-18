@@ -431,7 +431,7 @@ table {
     "title price"
     "description description";
 
-  height: 10vh;
+  height: min-content;
   width: 90vw;
   background-color: var(--content-card-bg-color);
 }
