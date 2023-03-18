@@ -1,5 +1,6 @@
 import { createElement } from "../scripts/initializeElements";
 import TextContent from "./textContent.json";
+import BackgroundImage from "../content/squareParchment.svg";
 
 function createMenu(category, parent) {
   const section = createElement("div", ["section", category], parent);
@@ -29,6 +30,8 @@ function createMenu(category, parent) {
       );
     }
   });
+  const bgImg = createElement("img", ["background"], parent);
+  bgImg.src = BackgroundImage;
 }
 
 export default function createMenuDiv() {

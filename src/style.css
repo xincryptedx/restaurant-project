@@ -235,14 +235,6 @@ table {
   z-index: 1;
 }
 
-.content .background {
-  height: 100%;
-  width: 100%;
-  grid-column: 1 / span all;
-  grid-row: 1 / span all;
-  z-index: 0;
-}
-
 .content::before,
 .content::after {
   content: "";
@@ -288,6 +280,14 @@ table {
   background-color: var(--content-card-bg-color);
   height: 90%;
   width: 90%;
+}
+
+.content .home .background {
+  height: 100%;
+  width: 100%;
+  grid-column: 1 / span all;
+  grid-row: 1 / span all;
+  z-index: 0;
 }
 
 .content .home img {
