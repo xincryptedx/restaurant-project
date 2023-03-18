@@ -525,8 +525,8 @@ table {
 .content .contact .background {
   height: 100%;
   width: 100%;
-  grid-column: 1 / span all;
-  grid-row: 1 / span all;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
   z-index: 0;
 }
 
@@ -537,12 +537,13 @@ table {
   text-align: center;
   align-items: center;
   justify-items: center;
+  grid-auto-rows: 8vh;
 }
 
 .content .contact .leylines {
   grid-area: leylines;
   display: grid;
-  grid-template: 1fr 4fr / 1fr;
+  grid-template: 10% 50% / 1fr;
   grid-template-areas:
     "title"
     "text";
