@@ -1,0 +1,14 @@
+{
+  "leyline": {
+    "title": "Leyline Coordinates",
+    "text": [
+      "Arathi Highlands:   555-555-1234",
+      "Crystalsong Forest: 555-555-4321",
+      "Broken Isles:       555-555-1423"
+    ]
+  },
+
+  "message": {
+    "title": "Send Us a Message"
+  }
+}
