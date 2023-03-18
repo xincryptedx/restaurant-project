@@ -556,6 +556,10 @@ table {
   padding-bottom: 10px;
 }
 
+.content .contact img {
+  filter: drop-shadow(2px 2px 4px grey);
+}
+
 .content .contact .leylines {
   grid-area: leylines;
   display: grid;
