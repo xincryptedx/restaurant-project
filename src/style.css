@@ -391,17 +391,23 @@ table {
     "beverages-wrapper"
     "desserts-title"
     "desserts-wrapper";
+  gap: 15px 0px;
   justify-items: center;
   overflow-y: scroll;
 }
 
 .content .menu .section {
   display: grid;
-  height: 10vh;
+  height: 7vh;
+  width: 90%;
+  border-bottom: 1px dotted black;
 }
 
 .content .menu .section .title {
-  align-self: center;
+  align-self: end;
+  justify-self: center;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .content .menu .wrapper .entry {
