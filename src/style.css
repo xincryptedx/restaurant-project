@@ -611,6 +611,7 @@ table {
 .content .contact textarea.message-content {
   grid-area: message-content;
   background-color: var(--form-bg-color);
+  resize: none;
 }
 
 /* #endregion */
