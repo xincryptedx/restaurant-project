@@ -574,7 +574,7 @@ table {
 .content .contact .message {
   grid-area: message;
   display: grid;
-  grid-template: 0.5fr 1fr 6fr 1fr 0.5fr/ 1fr 2fr 2fr 1fr;
+  grid-template: 0.5fr 1fr 5fr 0.7fr 0.5fr/ 1fr 2fr 2fr 1fr;
   grid-template-areas:
     ". . . ."
     ". title title ."
