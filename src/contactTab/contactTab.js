@@ -17,6 +17,7 @@ export default function createContactDiv() {
   const messageDiv = createElement("div", ["message"], element);
   createElement("p", ["title"], messageDiv, TextContent.message.title);
   const messageForm = createElement("form", [], messageDiv);
+  messageForm.setAttribute("id", "message-form");
   const subjectLabel = createElement(
     "label",
     ["subject"],
@@ -40,7 +41,7 @@ export default function createContactDiv() {
     messageForm
   );
   messageContentTextarea.setAttribute("id", "message-content-textarea");
-  const submitButton = createElement("button", ["submit"], messageDiv, "Send");
+  createElement("button", ["submit"], messageDiv, "Send");
   const messageBgImg = createElement("img", ["background"], messageDiv);
   messageBgImg.src = BackgroundImage;
 
