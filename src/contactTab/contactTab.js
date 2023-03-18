@@ -40,7 +40,7 @@ export default function createContactDiv() {
     messageForm
   );
   messageContentTextarea.setAttribute("id", "message-content-textarea");
-
+  const submitButton = createElement("button", ["submit"], messageDiv, "Send");
   const messageBgImg = createElement("img", ["background"], messageDiv);
   messageBgImg.src = BackgroundImage;
 
