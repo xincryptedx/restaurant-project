@@ -503,7 +503,7 @@ table {
 .content .contact {
   height: 100%;
   display: grid;
-  grid-template: repeat(2, 50%) / 1fr;
+  grid-template: 50% 75% / 1fr;
   grid-template-areas:
     "leylines"
     "message";
