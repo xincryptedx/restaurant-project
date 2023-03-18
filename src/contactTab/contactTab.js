@@ -15,7 +15,8 @@ export default function createContactDiv() {
   leylinesBgImg.src = BackgroundImage;
 
   const messageDiv = createElement("div", ["message"], element);
-
+  createElement("p", ["title"], messageDiv, TextContent.message.title);
+  const messageForm = createElement("form", [], messageDiv);
   const messageBgImg = createElement("img", ["background"], messageDiv);
   messageBgImg.src = BackgroundImage;
 

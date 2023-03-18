@@ -567,12 +567,22 @@ table {
 .content .contact .message {
   grid-area: message;
   display: grid;
-  grid-template: 1fr 1fr 4fr 1fr/ 1fr 1fr;
+  grid-template: 1fr 6fr 1fr/ 1fr 1fr;
   grid-template-areas:
     "title title"
-    "subject subject"
-    "content content"
+    "form form"
     ". submit";
+}
+
+.content .contact .message form {
+  grid-area: form;
+  display: grid;
+  grid-template: 0.5fr 1fr 0.5fr 4fr 1fr/ 1fr;
+  grid-template-areas:
+    "subject-label subject-label"
+    "subject subject"
+    "content-label content-label"
+    "content content";
 }
 
 /* #endregion */
