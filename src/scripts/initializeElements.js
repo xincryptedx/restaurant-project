@@ -1,5 +1,6 @@
 import HeaderImage from "../header/landscapeParchment.svg";
 import Attribution from "../footer/attribution.json";
+import Background from "../images/purpleLattice.jpg";
 
 export function createElement(elementType, classes, parent, textContent) {
   const element = document.createElement(elementType);
@@ -24,6 +25,7 @@ export function createElement(elementType, classes, parent, textContent) {
 export default function createInitialElements() {
   // Create Container Elements
   const containerDiv = createElement("div", ["container"], document.body);
+  containerDiv.style.backgroundImage = `url(${Background})`;
 
   // Create Header Elements w/ Classes
   const headerDiv = createElement("div", ["header"], containerDiv);
