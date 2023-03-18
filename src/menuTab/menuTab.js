@@ -49,8 +49,8 @@ export default function createMenuDiv() {
     element,
     TextContent.entrees.title
   );
-  createElement("div", ["wrapper", "entrees"], element);
-  // Create items based on json
+  const entreesWrapper = createElement("div", ["wrapper", "entrees"], element);
+  createMenu("entrees", entreesWrapper);
 
   createElement(
     "div",
@@ -58,8 +58,12 @@ export default function createMenuDiv() {
     element,
     TextContent.beverages.title
   );
-  createElement("div", ["wrapper", "beverages"], element);
-  // Create items based on json
+  const beveragesWrapper = createElement(
+    "div",
+    ["wrapper", "beverages"],
+    element
+  );
+  createMenu("beverages", beveragesWrapper);
 
   createElement(
     "div",
@@ -67,8 +71,12 @@ export default function createMenuDiv() {
     element,
     TextContent.desserts.title
   );
-  createElement("div", ["wrapper", "desserts"], element);
-  // Create items based on json
+  const dessertsWrapper = createElement(
+    "div",
+    ["wrapper", "desserts"],
+    element
+  );
+  createMenu("desserts", dessertsWrapper);
 
   return element;
 }
