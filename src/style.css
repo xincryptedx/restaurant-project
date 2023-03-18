@@ -394,6 +394,29 @@ table {
   overflow-y: scroll;
 }
 
+.content .menu .wrapper {
+}
+
+.content .menu .wrapper .entry {
+  display: grid;
+  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template-areas:
+    "title price"
+    "description description";
+}
+
+.content .menu .wrapper .entry .title {
+  grid-area: title;
+}
+
+.content .menu .wrapper .entry .price {
+  grid-area: price;
+}
+
+.content .menu .wrapper .entry .description {
+  grid-area: description;
+}
+
 .content .menu .section.title.appetizers {
   grid-area: appetizers-title;
 }
