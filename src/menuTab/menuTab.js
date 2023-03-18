@@ -1,10 +1,14 @@
 import { createElement } from "../scripts/initializeElements";
 import TextContent from "./textContent.json";
 
-function createMenu(category, wraper) {
+function createMenu(category, parent) {
+  const section = createElement("div", ["section", category], parent);
+  createElement("p", ["title", category], section, TextContent[category].title);
+  const wrapper = createElement("div", ["wrapper", category], parent);
+
   Object.keys(TextContent.appetizers).forEach((key) => {
     if (key !== "title") {
-      const entry = createElement("div", ["entry", category], wraper);
+      const entry = createElement("div", ["entry", category], wrapper);
       createElement(
         "p",
         ["title", category],
@@ -30,58 +34,10 @@ function createMenu(category, wraper) {
 export default function createMenuDiv() {
   const element = createElement("div", ["menu"]);
 
-  const appetizersSection = createElement(
-    "div",
-    ["section", "appetizers"],
-    element
-  );
-  createElement(
-    "p",
-    ["title", "appetizers"],
-    appetizersSection,
-    TextContent.appetizers.title
-  );
-  const appetizersWrapper = createElement(
-    "div",
-    ["wrapper", "appetizers"],
-    element
-  );
-  createMenu("appetizers", appetizersWrapper);
-
-  createElement(
-    "div",
-    ["section", "title", "entrees"],
-    element,
-    TextContent.entrees.title
-  );
-  const entreesWrapper = createElement("div", ["wrapper", "entrees"], element);
-  createMenu("entrees", entreesWrapper);
-
-  createElement(
-    "div",
-    ["section", "title", "beverages"],
-    element,
-    TextContent.beverages.title
-  );
-  const beveragesWrapper = createElement(
-    "div",
-    ["wrapper", "beverages"],
-    element
-  );
-  createMenu("beverages", beveragesWrapper);
-
-  createElement(
-    "div",
-    ["section", "title", "desserts"],
-    element,
-    TextContent.desserts.title
-  );
-  const dessertsWrapper = createElement(
-    "div",
-    ["wrapper", "desserts"],
-    element
-  );
-  createMenu("desserts", dessertsWrapper);
+  createMenu("appetizers", element);
+  createMenu("entrees", element);
+  createMenu("beverages", element);
+  createMenu("desserts", element);
 
   return element;
 }
