@@ -406,7 +406,7 @@ table {
   display: grid;
   height: 7vh;
   width: 90%;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted white;
 }
 
 .content .menu .section .title {
@@ -414,6 +414,7 @@ table {
   justify-self: center;
   font-size: 1.2rem;
   font-weight: bold;
+  color: white;
   text-shadow: 2px 2px 4px grey;
 }
 
