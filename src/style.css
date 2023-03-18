@@ -140,6 +140,8 @@ table {
 
   --content-bg-color: hsl(187, 51%, 75%);
 
+  --form-bg-color: hsl(46, 22%, 78%);
+
   --content-card-bg-color: hsla(95, 80%, 50%, 0);
 
   --footer-bg-color: hsl(106, 60%, 39%);
@@ -598,6 +600,8 @@ table {
 
 .content .contact input.subject {
   grid-area: subject;
+  height: 1.5rem;
+  background-color: var(--form-bg-color);
 }
 
 .content .contact label.message-content {
@@ -606,6 +610,7 @@ table {
 
 .content .contact textarea.message-content {
   grid-area: message-content;
+  background-color: var(--form-bg-color);
 }
 
 /* #endregion */
