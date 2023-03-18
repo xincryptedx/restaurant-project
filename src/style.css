@@ -381,7 +381,7 @@ table {
 .content .menu {
   height: 100%;
   display: grid;
-  grid-template: repeat(4, min-content 1fr) / 1fr;
+  grid-template: repeat(4, min-content min-content) / 1fr;
   grid-template-areas:
     "appetizers-title"
     "appetizers-wrapper"
