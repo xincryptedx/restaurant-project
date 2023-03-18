@@ -6,13 +6,11 @@ export default function createContactDiv() {
   const element = createElement("div", ["contact"]);
 
   const leylinesDiv = createElement("div", ["leylines"], element);
-  createElement("p", ["title"], leylinesDiv, TextContent.leylines.title); // Don't try to join single lined text
-  createElement(
-    "p",
-    ["text"],
-    leylinesDiv,
-    TextContent.leylines.text.join(" ")
-  ); // Multiline text needs joined
+  createElement("p", ["title"], leylinesDiv, TextContent.leylines.title);
+  const leylinesWrapper = createElement("div", ["wrapper"], leylinesDiv);
+  TextContent.leylines.text.forEach((line) => {
+    createElement("p", ["text"], leylinesWrapper, line);
+  });
   const aboutBgImg = createElement("img", ["background"], leylinesDiv);
   aboutBgImg.src = BackgroundImage;
 
