@@ -134,17 +134,17 @@ table {
 
 /* Global Variables */
 :root {
-  --header-bg-color: hsl(0, 64%, 36%);
+  --header-bg-color: hsla(0, 74%, 39%, 0);
 
-  --nav-bg-color: hsl(56, 56%, 45%);
+  --nav-bg-color: hsla(56, 56%, 45%, 0);
 
-  --content-bg-color: hsl(187, 51%, 75%);
+  --content-bg-color: hsla(187, 51%, 75%, 0);
 
   --form-bg-color: hsl(46, 22%, 78%);
 
   --content-card-bg-color: hsla(95, 80%, 50%, 0);
 
-  --footer-bg-color: hsl(106, 60%, 39%);
+  --footer-bg-color: hsla(0, 0%, 0%, 0.75);
 }
 
 /* Containter Div */
