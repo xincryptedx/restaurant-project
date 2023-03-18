@@ -567,8 +567,9 @@ table {
 .content .contact .message {
   grid-area: message;
   display: grid;
-  grid-template: 1fr 4fr 1fr/ 1fr 1fr;
+  grid-template: 1fr 1fr 4fr 1fr/ 1fr 1fr;
   grid-template-areas:
+    "title title"
     "subject subject"
     "content content"
     ". submit";
