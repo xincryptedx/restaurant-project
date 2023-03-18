@@ -442,6 +442,10 @@ table {
   height: 10vh;
 }
 
+.content .menu .wrapper .entry.spacer {
+  height: 5vh;
+}
+
 .content .menu .wrapper .entry .title {
   grid-area: title;
 }
