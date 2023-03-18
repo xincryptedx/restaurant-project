@@ -17,6 +17,17 @@ export default function createContactDiv() {
   const messageDiv = createElement("div", ["message"], element);
   createElement("p", ["title"], messageDiv, TextContent.message.title);
   const messageForm = createElement("form", [], messageDiv);
+  const subjectLabel = createElement(
+    "label",
+    ["subject"],
+    messageForm,
+    "Subject:"
+  );
+  const subjectInput = createElement("input", ["subject"], messageForm);
+  subjectInput.setAttribute("type", "text");
+  subjectInput.setAttribute("id", "subject-input");
+
+  subjectLabel.setAttribute("for", "subject-input");
   const messageBgImg = createElement("img", ["background"], messageDiv);
   messageBgImg.src = BackgroundImage;
 
