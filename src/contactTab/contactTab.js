@@ -14,5 +14,7 @@ export default function createContactDiv() {
   const aboutBgImg = createElement("img", ["background"], leylinesDiv);
   aboutBgImg.src = BackgroundImage;
 
+  const messageDiv = createElement("div", ["message"], element);
+
   return element;
 }

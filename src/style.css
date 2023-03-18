@@ -540,17 +540,6 @@ table {
   grid-auto-rows: 8vh;
 }
 
-.content .contact .leylines {
-  grid-area: leylines;
-  display: grid;
-  grid-template: 10% 50% / 1fr;
-  grid-template-areas:
-    "title"
-    "text";
-  align-items: center;
-  justify-items: center;
-}
-
 .content .contact .title {
   grid-area: title;
   text-align: center;
@@ -562,6 +551,27 @@ table {
 .content .contact .text {
   text-align: center;
   padding-bottom: 10px;
+}
+
+.content .contact .leylines {
+  grid-area: leylines;
+  display: grid;
+  grid-template: 10% 50% / 1fr;
+  grid-template-areas:
+    "title"
+    "text";
+  align-items: center;
+  justify-items: center;
+}
+
+.content .contact .message {
+  grid-area: message;
+  display: grid;
+  grid-template: 10% 40% 10% / 1fr 1fr;
+  grid-template-areas:
+    "subject subject"
+    "content content"
+    ". submit";
 }
 
 /* #endregion */
