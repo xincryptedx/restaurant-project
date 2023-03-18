@@ -136,9 +136,11 @@ table {
 :root {
   --header-bg-color: hsla(0, 74%, 39%, 0);
 
-  --nav-bg-color: hsla(56, 56%, 45%, 0);
+  --nav-bg-color: hsla(0, 0%, 0%, 0);
+  --nav-tab-bg-color: hsla(0, 0%, 0%, 0.4);
 
-  --content-bg-color: hsla(187, 51%, 75%, 0);
+  --content-bg-color: hsla(0, 0%, 0%, 0.4);
+  --content-scroll-fade-color: hsla(0, 0%, 0%, 0.637);
 
   --form-bg-color: hsl(46, 22%, 78%);
 
@@ -204,7 +206,7 @@ table {
 }
 
 .nav .tab {
-  background-color: white;
+  background-color: var(--nav-tab-bg-color);
 
   display: grid;
   justify-items: center;
@@ -214,7 +216,7 @@ table {
   width: 80%;
   align-self: end;
   justify-self: center;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .nav .tab p {
@@ -247,7 +249,7 @@ table {
   background-image: linear-gradient(
     to bottom,
     hsla(0, 0%, 100%, 0),
-    var(--content-bg-color)
+    var(--content-scroll-fade-color)
   );
   pointer-events: none;
   z-index: 2;
