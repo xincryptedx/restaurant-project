@@ -742,24 +742,20 @@ table {
   .content .contact textarea {
     font-size: 1.2rem;
   }
+
+  .footer .author {
+    font-size: 0.9rem;
+  }
+
+  .footer .attribution {
+    font-size: 0.9rem;
+  }
 }
 /* #endregion */
 
 /* Screens at least 1200px wide */
 /* #region */
 @media only screen and (min-width: 1200px) {
-  /*  .content .home {
-    grid-template: 60% 60% / 1fr 1fr;
-    grid-template-areas:
-      "about hours"
-      "locations reviews";
-    gap: 0px 0px;
-  }
-
-  .content .home div {
-    height: 60%;
-  } */
-
   .header .background {
     max-width: 1200px;
   }
