@@ -31,9 +31,15 @@ export default function navController() {
     }
   }
 
+  function init() {
+    switchTab("home");
+  }
+
   navTabs.forEach((tab) => {
     const classes = Array.from(tab.classList);
     const activeClass = classes.find((className) => className !== "tab");
     tab.addEventListener("click", () => switchTab(activeClass));
   });
+
+  return { init };
 }
