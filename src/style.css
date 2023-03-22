@@ -472,6 +472,7 @@ table {
   grid-area: price;
   justify-self: end;
   font-style: italic;
+  font-size: 0.9rem;
 }
 
 .content .menu .wrapper .entry .description {
