@@ -721,5 +721,26 @@ table {
   .content .menu .wrapper .entry .description {
     font-size: 1.2rem;
   }
+
+  .content .contact .title {
+    font-size: 1.75rem;
+  }
+
+  .content .contact .text {
+    font-size: 1.4rem;
+  }
+
+  .content .contact label {
+    font-size: 1.2rem;
+  }
+
+  .content .contact input.subject {
+    height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .content .contact textarea {
+    font-size: 1.2rem;
+  }
 }
 /* #endregion */
