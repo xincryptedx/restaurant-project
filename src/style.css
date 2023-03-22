@@ -709,5 +709,17 @@ table {
   .content .menu .section .title {
     font-size: 1.75rem;
   }
+
+  .content .menu .entry .title {
+    font-size: 1.4rem;
+  }
+
+  .content .menu .wrapper .entry .price {
+    font-size: 1.2rem;
+  }
+
+  .content .menu .wrapper .entry .description {
+    font-size: 1.2rem;
+  }
 }
 /* #endregion */
