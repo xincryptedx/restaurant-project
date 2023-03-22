@@ -1,7 +1,7 @@
 import "./style.css";
 import InitializeElements from "./scripts/initializeElements";
-import InitializeNav from "./nav/nav";
+import Nav from "./nav/nav";
 
 InitializeElements();
-InitializeNav();
-InitializeNav().init();
+Nav();
+Nav().init();
