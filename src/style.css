@@ -688,7 +688,7 @@ table {
 
 /* Screens at least 950px wide */
 /* #region */
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 750px) {
   .header .title {
     font-size: 2rem;
   }
@@ -741,6 +741,39 @@ table {
 
   .content .contact textarea {
     font-size: 1.2rem;
+  }
+}
+/* #endregion */
+
+/* Screens at least 1200px wide */
+/* #region */
+@media only screen and (min-width: 1200px) {
+  /*  .content .home {
+    grid-template: 60% 60% / 1fr 1fr;
+    grid-template-areas:
+      "about hours"
+      "locations reviews";
+    gap: 0px 0px;
+  }
+
+  .content .home div {
+    height: 60%;
+  } */
+
+  .header .background {
+    max-width: 1200px;
+  }
+
+  .content .home div {
+    max-width: 1200px;
+  }
+
+  .content .menu .wrapper {
+    max-width: 1200px;
+  }
+
+  .content .contact div {
+    max-width: 1200px;
   }
 }
 /* #endregion */
