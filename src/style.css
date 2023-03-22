@@ -685,3 +685,29 @@ table {
 }
 
 /* #endregion */
+
+/* Screens at least 950px wide */
+/* #region */
+@media only screen and (min-width: 950px) {
+  .header .title {
+    font-size: 2rem;
+  }
+
+  .nav .tab p {
+    font-size: 1.5rem;
+  }
+
+  .content .home .title {
+    font-size: 1.75rem;
+  }
+
+  .content .home .text,
+  .content .home .text-entry {
+    font-size: 1.4rem;
+  }
+
+  .content .menu .section .title {
+    font-size: 1.75rem;
+  }
+}
+/* #endregion */
